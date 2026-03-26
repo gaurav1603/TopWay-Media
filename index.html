@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Topway मिडीया – Advertising & PR</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="index.css">
+<!-- <script src="index.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "3nGejaKiNsz8i9-lq",
+      });
+   })();
+</script>
+</head>
+<body>
+
+<!-- ══ CURSOR GLOW ══ -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ══ NAVBAR ══ -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">
+    <div class="logo-emblem">
+      <span>T</span>
+      <div class="logo-ring"></div>
+    </div>
+    <div class="logo-text">
+      <span class="logo-main">Topway</span>
+      <span class="logo-hindi">मिडीया</span>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+      <i class="fas fa-moon"></i>
+    </button>
+    <a href="#contact" class="nav-cta">
+      <span>Get Started</span>
+      <i class="fas fa-arrow-right"></i>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══ BLUR OVERLAY ══ -->
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<!-- ══ MOBILE MENU ══ -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about"     onclick="closeMobile()"><i class="fas fa-info-circle"></i>About</a>
+  <a href="#services"  onclick="closeMobile()"><i class="fas fa-th-large"></i>Services</a>
+  <a href="#team"      onclick="closeMobile()"><i class="fas fa-users"></i>Team</a>
+  <a href="#portfolio" onclick="closeMobile()"><i class="fas fa-briefcase"></i>Portfolio</a>
+  <a href="#contact"   onclick="closeMobile()"><i class="fas fa-envelope"></i>Contact</a>
+  <div class="mob-bottom">
+    <a href="#contact" class="mob-cta" onclick="closeMobile()">
+      <i class="fas fa-rocket"></i> Get Started
+    </a>
+    <button class="mob-dark-toggle" id="mobDarkToggle" aria-label="Toggle dark mode">
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
+</div>
+
+<!-- ══ HERO ══ -->
+<section id="home">
+  <div class="hero-noise"></div>
+  <div class="hero-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <div class="carousel-track" id="carouselTrack">
+    <div class="carousel-slide">
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fas fa-rocket"></i> Topway मिडीया</div>
+        <h1 class="hero-title">Elevate Your Brand<br>to the <em>Top</em></h1>
+        <p class="hero-sub">We craft powerful marketing strategies and PR campaigns that put your brand at the forefront of every conversation.</p>
+        <div class="hero-btns">
+          <a href="#services" class="btn-primary"><i class="fas fa-rocket"></i>Explore Services</a>
+          <a href="#about"    class="btn-ghost">Our Story <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-slide">
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fas fa-bullhorn"></i> Advertising Excellence</div>
+        <h1 class="hero-title">Ads That <em>Speak</em><br>&amp; Convert</h1>
+        <p class="hero-sub">From concept to conversion — campaigns that resonate with your audience and drive real business results.</p>
+        <div class="hero-btns">
+          <a href="#services" class="btn-primary"><i class="fas fa-bullhorn"></i>Our Services</a>
+          <a href="#contact"  class="btn-ghost">Let's Talk <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-slide">
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fab fa-instagram"></i> Social Media Marketing</div>
+        <h1 class="hero-title">Go <em>Viral</em>,<br>Stay Relevant</h1>
+        <p class="hero-sub">We build and manage your social media presence with content that engages and turns followers into loyal customers.</p>
+        <div class="hero-btns">
+          <a href="#services"  class="btn-primary"><i class="fas fa-hashtag"></i>Social Media</a>
+          <a href="#portfolio" class="btn-ghost">View Work <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-slide">
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fas fa-trophy"></i> Public Relations</div>
+        <h1 class="hero-title">Build a <em>Reputation</em><br>That Lasts</h1>
+        <p class="hero-sub">Our PR experts craft compelling narratives, manage media relations, and position your brand as the trusted industry authority.</p>
+        <div class="hero-btns">
+          <a href="#services" class="btn-primary"><i class="fas fa-star"></i>PR Services</a>
+          <a href="#team"     class="btn-ghost">Meet Team <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-slide">
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fas fa-chart-line"></i> Digital Marketing</div>
+        <h1 class="hero-title">Data-Driven<br><em>Growth</em> Strategies</h1>
+        <p class="hero-sub">Creativity meets analytics — targeted campaigns that maximize ROI and accelerate your business growth.</p>
+        <div class="hero-btns">
+          <a href="#contact"   class="btn-primary"><i class="fas fa-chart-line"></i>Start Growing</a>
+          <a href="#portfolio" class="btn-ghost">Case Studies <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-nav prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+  <button class="carousel-nav next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+  <div class="carousel-dots" id="carouselDots"></div>
+
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"><div class="scroll-dot"></div></div>
+  </div>
+</section>
+
+<!-- ══ ABOUT ══ -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-visual reveal">
+      <div class="av-main">
+        <div class="av-emoji">🎯</div>
+        <div class="av-label">Strategy First</div>
+      </div>
+      <div class="av-cards">
+        <div class="av-card ac-orange"><div class="av-emoji-sm">📣</div><span>Advertising</span></div>
+        <div class="av-card ac-gold"><div class="av-emoji-sm">📱</div><span>Social Media</span></div>
+        <div class="av-card ac-purple"><div class="av-emoji-sm">🎬</div><span>Video</span></div>
+        <div class="av-card ac-green"><div class="av-emoji-sm">🏆</div><span>PR & Media</span></div>
+      </div>
+      <div class="av-badge">
+        <strong>5+</strong>
+        <span>Years of Excellence</span>
+      </div>
+    </div>
+
+    <div class="about-text reveal">
+      <span class="section-label">About Us</span>
+      <h2 class="section-title">We Are Creative<br>And Awesome</h2>
+      <div class="divider"></div>
+      <p>As a dynamic team of professionals, we specialize in delivering innovative services that cater to a wide range of industries. Whether you're looking to elevate your brand presence or create impactful visual content, we've got you covered.</p>
+      <p>At Topway मिडीया, we blend strategy with creativity to deliver Advertising &amp; PR solutions that create lasting impressions and measurable results for businesses of every size.</p>
+      <div class="about-stats">
+        <div class="stat-box reveal">
+          <div class="stat-icon"><i class="fas fa-users"></i></div>
+          <strong class="stat-num" data-target="200">0</strong><span class="stat-plus">+</span>
+          <span class="stat-label">Clients Served</span>
+        </div>
+        <div class="stat-box reveal">
+          <div class="stat-icon"><i class="fas fa-heart"></i></div>
+          <strong class="stat-num" data-target="98">0</strong><span class="stat-plus">%</span>
+          <span class="stat-label">Satisfaction Rate</span>
+        </div>
+        <div class="stat-box reveal">
+          <div class="stat-icon"><i class="fas fa-fire"></i></div>
+          <strong class="stat-num" data-target="50">0</strong><span class="stat-plus">+</span>
+          <span class="stat-label">Campaigns Run</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES ══ -->
+<section id="services">
+  <div class="section-header reveal center">
+    <span class="section-label">What We Do</span>
+    <h2 class="section-title">Our Services</h2>
+    <div class="divider mx-auto"></div>
+    <p class="section-sub">Comprehensive marketing and communication solutions designed to elevate your brand and drive meaningful results.</p>
+  </div>
+
+  <div class="filter-tabs" id="filterTabs">
+    <button class="filter-tab active" data-filter="all">All Services</button>
+    <button class="filter-tab" data-filter="social">Social Media</button>
+    <button class="filter-tab" data-filter="advertising">Advertising</button>
+    <button class="filter-tab" data-filter="marketing">Marketing</button>
+    <button class="filter-tab" data-filter="pr">PR</button>
+  </div>
+
+  <div class="services-grid" id="servicesGrid">
+    <div class="service-card s1 reveal" data-category="social">
+      <div class="card-visual">
+        <div class="card-gradient g1"></div>
+        <!-- <div class="card-icon-wrap"><span class="card-emoji">📱</span></div> -->
+        <div class="card-icon-wrap">
+          <span class="card-emoji"><img src="social_media.png" alt="Social Media"></span>
+        </div>
+        <div class="card-shine"></div>
+      </div>
+      <div class="card-body">
+        <span class="card-tag t-social">Social Media</span>
+        <div class="card-title">Social Media Marketing</div>
+        <div class="card-desc">Strategic content creation, community management, and paid social campaigns across Facebook, Instagram, YouTube &amp; more.</div>
+        <div class="card-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+    </div>
+
+    <div class="service-card s2 reveal" data-category="advertising">
+      <div class="card-visual">
+        <div class="card-gradient g2"></div>
+        <!-- <div class="card-icon-wrap"><span class="card-emoji">📺</span></div> -->
+        <div class="card-icon-wrap">
+          <span class="card-emoji"><img src="adverstising.png" alt="Advertising"></span>
+        </div>
+        <div class="card-shine"></div>
+      </div>
+      <div class="card-body">
+        <span class="card-tag t-adv">Advertising</span>
+        <div class="card-title">Media Advertising</div>
+        <div class="card-desc">Targeted ad campaigns across TV, radio, print, and outdoor media. We craft compelling messages that reach your ideal audience.</div>
+        <div class="card-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+    </div>
+
+    <div class="service-card s3 reveal" data-category="marketing">
+      <div class="card-visual">
+        <div class="card-gradient g3"></div>
+        <!-- <div class="card-icon-wrap"><span class="card-emoji">🎯</span></div> -->
+        <div class="card-icon-wrap">
+          <span class="card-emoji"><img src="digital_marketing.jpg" alt="Marketing"></span>
+        </div>
+        <div class="card-shine"></div>
+      </div>
+      <div class="card-body">
+        <span class="card-tag t-mkt">Marketing</span>
+        <div class="card-title">Digital Marketing</div>
+        <div class="card-desc">End-to-end digital marketing including SEO, SEM, email marketing, and content strategy. Data-driven approaches that maximize ROI.</div>
+        <div class="card-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+    </div>
+
+    <div class="service-card s4 reveal" data-category="pr">
+      <div class="card-visual">
+        <div class="card-gradient g4"></div>
+        <!-- <div class="card-icon-wrap"><span class="card-emoji">🏆</span></div> -->
+        <div class="card-icon-wrap">
+          <span class="card-emoji"><img src="public_relations.jpg" alt="Public Relations"></span>
+        </div>
+        <div class="card-shine"></div>
+      </div>
+      <div class="card-body">
+        <span class="card-tag t-pr">PR</span>
+        <div class="card-title">Public Relations</div>
+        <div class="card-desc">Media relations, press releases, crisis management, and brand reputation building. We craft narratives that shape public perception.</div>
+        <div class="card-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+    </div>
+
+    <div class="service-card s5 reveal" data-category="marketing">
+      <div class="card-visual">
+        <div class="card-gradient g5"></div>
+        <!-- <div class="card-icon-wrap"><span class="card-emoji">🌱</span></div> -->
+        <div class="card-icon-wrap">
+          <span class="card-emoji"><img src="brand.jpg" alt="Brand Strategy"></span>
+        </div>
+        <div class="card-shine"></div>
+      </div>
+      <div class="card-body">
+        <span class="card-tag t-mkt">Marketing</span>
+        <div class="card-title">Brand Strategy</div>
+        <div class="card-desc">Logo, identity, brand guidelines, and positioning strategy. We help define your brand's unique voice and visual language.</div>
+        <div class="card-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+    </div>
+
+    <div class="service-card s6 reveal" data-category="advertising">
+      <div class="card-visual">
+        <div class="card-gradient g6"></div>
+        <!-- <div class="card-icon-wrap"><span class="card-emoji">🎬</span></div> -->
+        <div class="card-icon-wrap">
+          <span class="card-emoji"><img src="video.jpg" alt="Video Production"></span>
+        </div>
+        <div class="card-shine"></div>
+      </div>
+      <div class="card-body">
+        <span class="card-tag t-adv">Advertising</span>
+        <div class="card-title">Video Production</div>
+        <div class="card-desc">Professional video content for ads, social media reels, corporate films, and events. High-quality visual storytelling.</div>
+        <div class="card-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PORTFOLIO ══ -->
+<section id="portfolio">
+  <div class="section-header reveal center">
+    <span class="section-label">Our Work</span>
+    <h2 class="section-title">Portfolio</h2>
+    <div class="divider mx-auto"></div>
+    <p class="section-sub">A selection of campaigns and projects that showcase our creative excellence and strategic thinking.</p>
+  </div>
+
+  <div class="portfolio-grid">
+    <div class="portfolio-item pi-wide reveal p1">
+      <div class="port-inner">
+        <div class="port-emoji">🎯</div>
+      </div>
+      <div class="port-overlay">
+        <span class="port-tag">Social Media</span>
+        <h3>Brand Launch Campaign</h3>
+        <p>Social Media · Advertising</p>
+      </div>
+    </div>
+    <div class="portfolio-item reveal p2">
+      <div class="port-inner">
+        <div class="port-emoji">📣</div>
+      </div>
+      <div class="port-overlay">
+        <span class="port-tag">Advertising</span>
+        <h3>Regional Ad Drive</h3>
+        <p>Print · Outdoor</p>
+      </div>
+    </div>
+    <div class="portfolio-item reveal p3">
+      <div class="port-inner">
+        <div class="port-emoji">🏆</div>
+      </div>
+      <div class="port-overlay">
+        <span class="port-tag">PR</span>
+        <h3>PR Media Coverage</h3>
+        <p>Public Relations</p>
+      </div>
+    </div>
+    <div class="portfolio-item reveal p4">
+      <div class="port-inner">
+        <div class="port-emoji">📱</div>
+      </div>
+      <div class="port-overlay">
+        <span class="port-tag">Social</span>
+        <h3>Social Media Takeover</h3>
+        <p>Instagram · YouTube</p>
+      </div>
+    </div>
+    <div class="portfolio-item pi-wide reveal p5">
+      <div class="port-inner">
+        <div class="port-emoji">🎬</div>
+      </div>
+      <div class="port-overlay">
+        <span class="port-tag">Video</span>
+        <h3>Corporate Video Series</h3>
+        <p>Video Production</p>
+      </div>
+    </div>
+    <div class="portfolio-item reveal p6">
+      <div class="port-inner">
+        <div class="port-emoji">🌱</div>
+      </div>
+      <div class="port-overlay">
+        <span class="port-tag">Branding</span>
+        <h3>Brand Identity Revamp</h3>
+        <p>Branding · Strategy</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TEAM ══ -->
+<!-- <section id="team">
+  <div class="section-header reveal center">
+    <span class="section-label">Our People</span>
+    <h2 class="section-title">Meet The Team</h2>
+    <div class="divider mx-auto"></div>
+    <p class="section-sub">A talented group of creative professionals passionate about delivering exceptional marketing results.</p>
+  </div>
+
+  <div class="team-grid">
+    <div class="team-card reveal">
+      <div class="team-avatar ta-1">
+        <div class="initials">RK</div>
+        <div class="team-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="team-info">
+        <div class="team-name">Rahul Kumar</div>
+        <div class="team-role">Founder &amp; CEO</div>
+        <div class="team-desc">Visionary leader with 10+ years in advertising and media strategy across central India.</div>
+      </div>
+    </div>
+    <div class="team-card reveal">
+      <div class="team-avatar ta-2">
+        <div class="initials">PS</div>
+        <div class="team-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="team-info">
+        <div class="team-name">Priya Sharma</div>
+        <div class="team-role">Creative Director</div>
+        <div class="team-desc">Award-winning creative mind behind bold campaigns and brand transformations.</div>
+      </div>
+    </div>
+    <div class="team-card reveal">
+      <div class="team-avatar ta-3">
+        <div class="initials">AM</div>
+        <div class="team-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="team-info">
+        <div class="team-name">Arjun Mehta</div>
+        <div class="team-role">Digital Marketing Head</div>
+        <div class="team-desc">SEO &amp; performance marketing expert driving measurable digital growth for clients.</div>
+      </div>
+    </div>
+    <div class="team-card reveal">
+      <div class="team-avatar ta-4">
+        <div class="initials">NJ</div>
+        <div class="team-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="team-info">
+        <div class="team-name">Neha Joshi</div>
+        <div class="team-role">PR Manager</div>
+        <div class="team-desc">Media relations specialist with deep connections across regional and national press.</div>
+      </div>
+    </div>
+    <div class="team-card reveal">
+      <div class="team-avatar ta-5">
+        <div class="initials">VT</div>
+        <div class="team-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="team-info">
+        <div class="team-name">Vikram Thakur</div>
+        <div class="team-role">Social Media Strategist</div>
+        <div class="team-desc">Content wizard who builds viral social strategies for brands across all platforms.</div>
+      </div>
+    </div>
+    <div class="team-card reveal">
+      <div class="team-avatar ta-6">
+        <div class="initials">SD</div>
+        <div class="team-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="team-info">
+        <div class="team-name">Sunita Desai</div>
+        <div class="team-role">Video &amp; Content Producer</div>
+        <div class="team-desc">Storyteller and filmmaker creating compelling visual narratives for brands.</div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- ══ CONTACT ══ -->
+<section id="contact">
+  <div class="section-header reveal center">
+    <span class="section-label">Get In Touch</span>
+    <h2 class="section-title">Contact Us</h2>
+    <div class="divider mx-auto"></div>
+    <p class="section-sub">Ready to take your brand to the top? Drop us a message and we'll get back to you shortly.</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-form-wrap reveal">
+      <div class="form-title"><i class="fas fa-paper-plane"></i> Send Us a Message</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">Your Name</label>
+          <div class="input-wrap"><i class="fas fa-user"></i><input type="text" id="fname" placeholder="e.g. Rahul Sharma" required></div>
+          <span class="field-error" id="err-fname"></span>
+        </div>
+        <div class="form-group">
+          <label for="fcontact">Contact Number</label>
+          <div class="input-wrap"><i class="fas fa-phone"></i><input type="tel" id="fcontact" placeholder="e.g. 9876543210" required></div>
+          <span class="field-error" id="err-fcontact"></span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="femail">Email Address</label>
+        <div class="input-wrap"><i class="fas fa-envelope"></i><input type="email" id="femail" placeholder="you@example.com" required></div>
+        <span class="field-error" id="err-femail"></span>
+      </div>
+      <div class="form-group">
+        <label for="fsubject">Subject</label>
+        <div class="input-wrap"><i class="fas fa-tag"></i><input type="text" id="fsubject" placeholder="How can we help you?" required></div>
+        <span class="field-error" id="err-fsubject"></span>
+      </div>
+      <div class="form-group">
+        <label for="fmessage">Message</label>
+        <div class="input-wrap ta-wrap"><i class="fas fa-comment-alt"></i><textarea id="fmessage" placeholder="Tell us about your project or query..." required></textarea></div>
+        <span class="field-error" id="err-fmessage"></span>
+      </div>
+      <button class="btn-send" id="sendBtn" type="button">
+        <span class="btn-text"><i class="fas fa-paper-plane" onclick="sendMail()"></i> Send Message</span>
+        <span class="btn-loading" style="display:none"><i class="fas fa-spinner fa-spin"></i> Sending…</span>
+      </button>
+    </div>
+
+    <div class="contact-info reveal">
+      <div class="contact-info-title">Reach Us Directly</div>
+      <div class="info-item">
+        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="info-text">
+          <strong>Our Address</strong>
+          <span>1 Trimurti Chowk, Akashwani, 431001<br>Chhatrapati Sambhajinagar</span>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+        <div class="info-text">
+          <strong>Mail Us</strong>
+          <span><a href="mailto:contact@topway.com">contact@topway.com</a></span>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+        <div class="info-text">
+          <strong>Call Us</strong>
+          <span>
+            <a href="tel:+919529464112">+91 95294 64112</a><br>
+            <a href="tel:+919909090901">+91 9909090901</a>
+          </span>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><i class="fas fa-globe"></i></div>
+        <div class="info-text">
+          <strong>Website</strong>
+          <span><a href="https://www.topway.in" target="_blank">www.topway.in</a></span>
+        </div>
+      </div>
+      <div class="map-embed">
+        <div class="map-inner">
+          <i class="fas fa-map-marked-alt"></i>
+          <div>
+            <strong>Chhatrapati Sambhajinagar</strong>
+            <p>Maharashtra, India</p>
+          </div>
+          <a href="https://maps.google.com/?q=Chhatrapati+Sambhajinagar" target="_blank" class="map-link">
+            Open Map <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="footer-logo-circle">T</div>
+        <div>
+          <div class="footer-logo-name">Topway <em>मिडीया</em></div>
+          <div class="footer-logo-tagline">Advertising &amp; PR</div>
+        </div>
+      </div>
+      <p>Delivering innovative advertising, PR, and marketing solutions that elevate brands and create lasting impressions across Central India and beyond.</p>
+      <div class="footer-socials">
+        <a href="https://facebook.com"  target="_blank" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com"   target="_blank" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://twitter.com"   target="_blank" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com"  target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Social Media Marketing</a></li>
+        <li><a href="#services">Media Advertising</a></li>
+        <li><a href="#services">Digital Marketing</a></li>
+        <li><a href="#services">Public Relations</a></li>
+        <li><a href="#services">Brand Strategy</a></li>
+        <li><a href="#services">Video Production</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:contact@topway.com">contact@topway.com</a></li>
+        <li><a href="tel:+919529464112">+91 95294 64112</a></li>
+        <li><a href="tel:+919909090901">+91 9909090901</a></li>
+        <li><a href="https://www.topway.in" target="_blank">www.topway.in</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="fyear"></span> Topway मिडीया. All rights reserved.</p>
+    <p>Made with <span class="heart">♥</span> in Chhatrapati Sambhajinagar</p>
+  </div>
+</footer>
+
+<!-- ══ SCROLL TO TOP ══ -->
+<button id="scrollTopBtn" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+
+<!-- ══ TOAST ══ -->
+<div class="toast" id="toast" role="alert" aria-live="polite">
+  <i class="toast-icon fas fa-check-circle"></i>
+  <span class="toast-msg">Message sent!</span>
+</div>
+
+<script src="index.js"></script>
+    <!-- ══ LIVE VIDEO & IMAGES ══ -->
+    <section class="live-section">
+      <h2>Live Video</h2>
+      <div class="live-video-container">
+        <!-- Replace src with your live stream embed link -->
+        <iframe class="live-video" src="https://www.youtube.com/embed/live_stream?channel=UC4R8DWoMoI7CAwX8_LjQHig" title="Live Video Stream" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section class="live-section">
+      <h2>Live Images</h2>
+      <div class="live-images-gallery">
+        <!-- Replace these with dynamic/live images as needed -->
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Live 1" />
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Live 2" />
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Live 3" />
+      </div>
+      <p class="live-note">For real-time images, connect to a live photo feed or use an API (e.g., Instagram, Unsplash, or your own backend).</p>
+    </section>
+
+</body>
+</html>
